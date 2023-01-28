@@ -81,7 +81,7 @@ function Testc({ title, id, email, home, token, price }) {
     let d = await res1.json();
     if (d.id) {
       var options = {
-        key: "rzp_live_xuQSaeqS5c2Dzq", // Enter the Key ID generated from the Dashboard
+        key: "rzp_test_dWqYIIA8T5WIU9", // Enter the Key ID generated from the Dashboard
         name: "GO-UPSC Pvt Ltd",
         currency: d.currency,
         amount: d.amount,
