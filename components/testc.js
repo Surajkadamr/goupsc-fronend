@@ -199,7 +199,7 @@ function Testc({ title, id, email, home, token, price }) {
             {!home && (
               <>
                 <Link
-                  href={`http://localhost:3000/testseries/testdetails/${id}`}
+                  href={`/testseries/testdetails/${id}`}
                   className="inline-flex mx-2 px-3 py-2 text-xs md:text-base font-medium text-center text-white bg-blue-600 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                 >
                   See Details
@@ -216,7 +216,7 @@ function Testc({ title, id, email, home, token, price }) {
                 )}
                 {check && token && (
                   <Link
-                    href={`http://localhost:3000/testseries/test-paper/${id}`}
+                    href={`/testseries/test-paper/${id}`}
                     className="inline-flex mx-2 items-center px-4 py-2 text-xs md:text-base font-medium text-center text-white bg-green-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                   >
                     Start Test
@@ -234,7 +234,7 @@ function Testc({ title, id, email, home, token, price }) {
             )}
             {home && (
               <Link
-                href={`http://localhost:3000/testseries`}
+                href={`/testseries`}
                 className="inline-flex mx-2 items-center px-4 py-2 text-xs md:text-base font-medium text-center text-white bg-green-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
               >
                 See Details

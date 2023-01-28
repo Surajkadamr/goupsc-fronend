@@ -260,7 +260,7 @@ function Viewsolution({ token }) {
                       <button
                         onClick={() => {
                           router.push(
-                            `http://localhost:3000/testseries/viewresults/${viewsolution}`
+                            `/testseries/viewresults/${viewsolution}`
                           );
                         }}
                         type="button"
