@@ -214,7 +214,7 @@ function Testpage({ email, token }) {
         }),
       });
       let d = await res.json();
-      router.push(`testseries/viewresults/${d.data.id}`);
+      router.push(`/testseries/viewresults/${d.data.id}`);
     }
   };
   const minutes = Math.floor(timeLeft / 60);
