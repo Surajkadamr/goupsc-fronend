@@ -80,7 +80,7 @@ function Result({ token, email }) {
   }, [testid]);
   const onsubmit = async () => {
     router.push(
-      `http://localhost:3000/testseries/viewresults/viewsolution/${link}`
+      `/testseries/viewresults/viewsolution/${link}`
     );
   };
   return (
