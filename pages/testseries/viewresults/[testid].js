@@ -5,7 +5,7 @@ import "react-toastify/dist/ReactToastify.css";
 import ErrorPage from "next/error";
 
 
-function Result({ token, email }) {
+function Result({ token, email,name }) {
   const router = useRouter();
   const { testid } = router.query;
   const [resultdata, setresultdata] = useState("");
@@ -89,7 +89,7 @@ function Result({ token, email }) {
       {err && err.error && <ErrorPage statusCode={404} />}
       <h2 className=" text-center font-bold text-2xl m-5">Results Page</h2>
       <div className="m-5 p-5 text-xs text-white text-center font-semibold shadow-xl bg-blue-400 rounded-xl">
-        <p className="mb-1">Candidate Name : Suraj Kadam R</p>
+        <p className="mb-1">Candidate Name : {name}</p>
         <p className="">Exam Name: {resultdata.tname}</p>
       </div>
       <div className="mx-5 p-5 rounded-xl shadow-xl  text-center">
